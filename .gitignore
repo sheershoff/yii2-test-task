@@ -31,4 +31,5 @@ tests/_support/_generated
 
 # docker-created local storages
 /mysql-data
+/mysql-data-test
 /nginx-logs
