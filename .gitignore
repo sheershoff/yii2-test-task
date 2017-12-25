@@ -28,3 +28,7 @@ phpunit.phar
 
 tests/_output/*
 tests/_support/_generated
+
+# docker-created local storages
+/mysql-data
+/nginx-logs
