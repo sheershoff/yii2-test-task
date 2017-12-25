@@ -13,6 +13,20 @@ Installation
 not there (20-30s, YMMV)
 1. `docker-compose exec php composer install`
 
+Run
+===
+
+1. `docker-compose up` or use `start-local.sh` that attempts to stop nginx and mysql on host machine first
+
+Tests
+=====
+
+ * `run-tests.sh` - stops running containers, starts containers from docker-compose-tests.yml, applies migrations to 
+  separate tests DB and runs all codeception tests
+ * `exec-tests.sh` - runs all codeception tests within main running containers
+ * `unit-exec.sh` - runs unit codeception tests within main running containers
+ * `docker-test.sh` - script that runs all codeception tests, assuming it is launched from set up env (e.g. docker container)
+
 Usage
 =====
 
