@@ -60,4 +60,32 @@ class ArrayDivider
 
         return ($l_count != $r_count) ? -1 : $l_pos;
     }
+
+    public static function validate($n, $a)
+    {
+        if (!is_numeric($n)) {
+            return false;
+        }
+        $n += 0;
+        if (!is_integer($n)) {
+            return false;
+        }
+        if (!is_array($a)) {
+            return false;
+        }
+        if (sizeof($a) < 2) {
+            return false;
+        }
+        foreach ($a as $k => $v) {
+            if (!is_numeric($v)) {
+                return false;
+            }
+            $v += 0;
+            if (!is_integer($v)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

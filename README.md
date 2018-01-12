@@ -30,4 +30,12 @@ Tests
 Usage
 =====
 
+Console
+-------
+
+1. `./start-local.sh`, then `docker-compose exec php ./yii divide -n=1 -a=1,2,3`
+
+REST API
+--------
+
 1. Navigate to `http://localhost` or `http://itppl-test-sheershoff.localhost`
