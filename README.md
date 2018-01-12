@@ -12,6 +12,7 @@ Installation
 1. `docker-compose up` or `./start-local.sh`, you have to wait for mysql while it creates data directories if they're 
 not there (20-30s, YMMV)
 1. `docker-compose exec php composer install`
+1. `docker-compose exec php ./yii migrate --interactive=0`
 
 Run
 ===
